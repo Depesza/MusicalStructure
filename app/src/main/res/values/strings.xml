@@ -1,0 +1,9 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Musical Structure</string>
+    <string name="artists">Artists</string>
+    <string name="albums">Albums</string>
+    <string name="all">All</string>
+    <string name="num_of_songs">Number of songs: </string>
+    <string name="space">-</string>
+    <string name="nowPlaying">Playing: <xliff:g id="album" example="6">%1$s</xliff:g>\n By: <xliff:g id="artist" example="good job">%2$s</xliff:g></string>
+</resources>
