@@ -18,10 +18,21 @@
         </activity>
         <activity
             android:name=".AlbumsActivity"
-            android:label="@string/albums" />
+            android:parentActivityName=".MainActivity"
+            android:label="@string/albums" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hania.musicalstructure.MainActivity" />
+        </activity>
+
         <activity
             android:name=".ArtistActivity"
-            android:label="@string/artists" />
+            android:parentActivityName=".MainActivity"
+            android:label="@string/artists" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.hania.musicalstructure.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

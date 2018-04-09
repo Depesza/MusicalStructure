@@ -1,8 +1,10 @@
 package com.example.hania.musicalstructure;
 
 import android.content.Context;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -18,6 +20,8 @@ public class AlbumsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal_list);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ArrayList<Album> albums = new ArrayList<Album>();
         albums.add(new Album("Depeche Mode", "Playing The Angle", 12));
@@ -35,8 +39,8 @@ public class AlbumsActivity extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-
     }
+
 
     public void play(View view) {
         albumName = findViewById(R.id.act_album);

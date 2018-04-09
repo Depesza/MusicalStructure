@@ -36,6 +36,9 @@ public class AlbumAdapter extends ArrayAdapter<Album> {
         TextView nr_of_songsTextView = listItemview.findViewById(R.id.act_nr_of_songs);
         nr_of_songsTextView.setText(String.valueOf(currentAlbum.getNr_of_songs()));
 
+//        I could also use - then wouldnt need 2 text views in xml:
+//        setText(getContext.getString(R.string.num_of_songs)) + String.valueOf(currentAlbum.getNr_of_songs()));
+
 
         return listItemview;
     }
